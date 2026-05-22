@@ -1,684 +1,1360 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Watertec Enterprises Pvt. Ltd | Industrial Water & Wastewater Treatment Solutions</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Watertec Enterprises Pvt. Ltd | Industrial Water & Wastewater Treatment
+      Solutions
+    </title>
 
-  <meta name="keywords" content="sewage treatment plant,wastewater treatment plant,wastewater treatment,water treatment plant,waste water treatment,sewage treatment,etp plant,water treatment,effluent treatment plant,water treatment companies,stp plant,industrial wastewater treatment,industrial water treatment,domestic sewage treatment plant,waste water management,waste water treatment plant"/>
-  <meta content="Watertec Enterprises Pvt. Ltd – ETP Plant, STP Plant, ZLD Plant, DM Plant, UF Systems, Industrial RO Water Treatment Plant, Sewage Treatment Plant (STP), Effluent Treatment Plant" name="title">
-  <meta name="description" content="Watertec Enterprises Pvt. Ltd offers top-notch ETP plant, STP plant, DM plant, and RO Plants in India. Contact us for innovative water solutions!">
+    <meta
+      name="keywords"
+      content="sewage treatment plant,wastewater treatment plant,wastewater treatment,water treatment plant,waste water treatment,sewage treatment,etp plant,water treatment,effluent treatment plant,water treatment companies,stp plant,industrial wastewater treatment,industrial water treatment,domestic sewage treatment plant,waste water management,waste water treatment plant"
+    />
+    <meta
+      content="Watertec Enterprises Pvt. Ltd – ETP Plant, STP Plant, ZLD Plant, DM Plant, UF Systems, Industrial RO Water Treatment Plant, Sewage Treatment Plant (STP), Effluent Treatment Plant"
+      name="title"
+    />
+    <meta
+      name="description"
+      content="Watertec Enterprises Pvt. Ltd offers top-notch ETP plant, STP plant, DM plant, and RO Plants in India. Contact us for innovative water solutions!"
+    />
 
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-
-  <!-- WELCOME MODAL (auto-opens on load) -->
-  <div id="welcomeModal" class="welcome-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
-    <div class="welcome-backdrop"></div>
-    <div class="welcome-panel">
-      <div class="welcome-left">
-        <div class="welcome-left-content">
-          <div class="welcome-badge">25+ Years</div>
-          <h2>Industrial Water<br /><span>Experts</span></h2>
-          <p>Trusted by 275+ enterprises across oil &amp; gas, cement, and municipal sectors.</p>
-          <div class="welcome-stats">
-            <div><strong>360+</strong><span>Projects</span></div>
-            <div><strong>135</strong><span>Engineers</span></div>
-            <div><strong>25+</strong><span>Years</span></div>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- WELCOME MODAL (auto-opens on load) -->
+    <div
+      id="welcomeModal"
+      class="welcome-overlay"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="welcomeTitle"
+    >
+      <div class="welcome-backdrop"></div>
+      <div class="welcome-panel">
+        <div class="welcome-left">
+          <div class="welcome-left-content">
+            <div class="welcome-badge">25+ Years</div>
+            <h2>Industrial Water<br /><span>Experts</span></h2>
+            <p>
+              Trusted by 275+ enterprises across oil &amp; gas, cement, and
+              municipal sectors.
+            </p>
+            <div class="welcome-stats">
+              <div><strong>360+</strong><span>Projects</span></div>
+              <div><strong>135</strong><span>Engineers</span></div>
+              <div><strong>25+</strong><span>Years</span></div>
+            </div>
           </div>
+          <div class="welcome-left-pattern"></div>
         </div>
-        <div class="welcome-left-pattern"></div>
-      </div>
-      <div class="welcome-right">
-        <button class="welcome-close" id="welcomeClose" aria-label="Close">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-        </button>
-        <div class="welcome-form-header">
-          <span class="form-eyebrow">Free Consultation</span>
-          <h2 class="welcome-mobile-title">Industrial Water<br><span>Experts</span></h2>
-          <h3 id="welcomeTitle">Let's Solve Your Water Treatment Challenge</h3>
-          <p>Share your details and our engineers will respond within 24 hours.</p>
-        </div>
-        <form class="welcome-form" id="welcomeForm">
-          <div class="wf-group">
-            <input type="text" name="name" id="wf-name" placeholder=" " required autocomplete="name" />
-            <label for="wf-name">Full Name</label>
-          </div>
-          <div class="wf-group">
-            <input type="tel" name="phone" id="wf-phone" placeholder=" " required autocomplete="tel" />
-            <label for="wf-phone">Phone Number</label>
-          </div>
-          <div class="wf-group">
-            <input type="email" name="email" id="wf-email" placeholder=" " autocomplete="email" />
-            <label for="wf-email">Email Address</label>
-          </div>
-          <div class="wf-group">
-            <textarea name="message" id="wf-msg" placeholder=" " rows="3"></textarea>
-            <label for="wf-msg">Project Details</label>
-          </div>
-          <button type="submit" class="wf-submit">
-            <span>Request Free Consultation</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        <div class="welcome-right">
+          <button class="welcome-close" id="welcomeClose" aria-label="Close">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
           </button>
-          <p class="wf-note">No spam. We respond within 24 hours.</p>
-        </form>
+          <div class="welcome-form-header">
+            <span class="form-eyebrow">Free Consultation</span>
+            <h2 class="welcome-mobile-title">
+              Industrial Water<br /><span>Experts</span>
+            </h2>
+            <h3 id="welcomeTitle">
+              Let's Solve Your Water Treatment Challenge
+            </h3>
+            <p>
+              Share your details and our engineers will respond within 24 hours.
+            </p>
+          </div>
+          <form class="welcome-form" id="welcomeForm">
+            <div class="wf-group">
+              <input
+                type="text"
+                name="name"
+                id="wf-name"
+                placeholder=" "
+                required
+                autocomplete="name"
+              />
+              <label for="wf-name">Full Name</label>
+            </div>
+            <div class="wf-group">
+              <input
+                type="tel"
+                name="phone"
+                id="wf-phone"
+                placeholder=" "
+                required
+                autocomplete="tel"
+              />
+              <label for="wf-phone">Phone Number</label>
+            </div>
+            <div class="wf-group">
+              <input
+                type="email"
+                name="email"
+                id="wf-email"
+                placeholder=" "
+                autocomplete="email"
+              />
+              <label for="wf-email">Email Address</label>
+            </div>
+            <div class="wf-group">
+              <textarea
+                name="message"
+                id="wf-msg"
+                placeholder=" "
+                rows="3"
+              ></textarea>
+              <label for="wf-msg">Project Details</label>
+            </div>
+            <button type="submit" class="wf-submit">
+              <span>Request Free Consultation</span>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+            <p class="wf-note">No spam. We respond within 24 hours.</p>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="page-shell">
-
-    <!-- TOPBAR -->
-    <header class="topbar">
-      <div class="container topbar-inner">
-        <div class="topbar-left">
-          <span>Follow us:</span>
-          <a href="#">LinkedIn</a>
-          <a href="#">Twitter</a>
-          <a href="#">Behance</a>
+    <div class="page-shell">
+      <!-- TOPBAR -->
+      <header class="topbar">
+        <div class="container topbar-inner">
+          <div class="topbar-left">
+            <span>Follow us:</span>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+            <a href="#">Behance</a>
+          </div>
+          <div class="topbar-right">
+            <a href="mailto:hello@watertech.com">
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-10 7L2 7" />
+              </svg>
+              hello@watertech.com
+            </a>
+            <span class="sep"></span>
+            <a href="tel:+919871151318">
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.07A19.5 19.5 0 015.13 12.7a19.86 19.86 0 01-3.07-8.63A2 2 0 014.09 2h3a2 2 0 012 1.72c.12 1.05.38 2.08.78 3.05a2 2 0 01-.45 2.11L9.91 9.91a16 16 0 006 6l1.03-1.03a2 2 0 012.11-.45c.97.4 2 .66 3.05.78A2 2 0 0122 16.92z"
+                />
+              </svg>
+              +91-9871151318
+            </a>
+          </div>
         </div>
-        <div class="topbar-right">
-          <a href="mailto:hello@watertech.com">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
-            hello@watertech.com
-          </a>
-          <span class="sep"></span>
-          <a href="tel:+919871151318">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.07A19.5 19.5 0 015.13 12.7a19.86 19.86 0 01-3.07-8.63A2 2 0 014.09 2h3a2 2 0 012 1.72c.12 1.05.38 2.08.78 3.05a2 2 0 01-.45 2.11L9.91 9.91a16 16 0 006 6l1.03-1.03a2 2 0 012.11-.45c.97.4 2 .66 3.05.78A2 2 0 0122 16.92z"/></svg>
-            +91-9871151318
-          </a>
-        </div>
-      </div>
-    </header>
+      </header>
 
-    <!-- NAVBAR -->
-    <header class="navbar" id="navbar">
-      <div class="navbar-inner container">
-        <a class="brand" href="#">
-          <img src="logo/mainlogo.png" alt="WaterTech Engineering Logo" class="brand-logo" />
-        </a>
-        <nav class="nav-menu">
-          <a href="#about" class="nav-link">About</a>
-          <a href="#services" class="nav-link">Services</a>
-          <a href="#sectors" class="nav-link">Sectors</a>
-          <a href="#projects" class="nav-link">Projects</a>
-          <a href="#contact" class="nav-link">Contact</a>
+      <!-- NAVBAR -->
+      <header class="navbar" id="navbar">
+        <div class="navbar-inner container">
+          <a class="brand" href="#">
+            <img
+              src="logo/mainlogo.png"
+              alt="WaterTech Engineering Logo"
+              class="brand-logo"
+            />
+          </a>
+          <nav class="nav-menu">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#sectors" class="nav-link">Sectors</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
+          <button class="nav-button contact-trigger" type="button">
+            Request Free Quote
+          </button>
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            type="button"
+            aria-label="Menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </header>
+
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu" id="mobileMenu">
+        <nav>
+          <a href="#about" class="mm-link">About</a>
+          <a href="#services" class="mm-link">Services</a>
+          <a href="#sectors" class="mm-link">Sectors</a>
+          <a href="#projects" class="mm-link">Projects</a>
+          <a href="#contact" class="mm-link">Contact</a>
         </nav>
-        <button class="nav-button contact-trigger" type="button">Request Free Quote</button>
-        <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu">
-          <span></span><span></span><span></span>
+        <button class="mm-cta contact-trigger" type="button">
+          Request Free Quote
         </button>
       </div>
-    </header>
 
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu" id="mobileMenu">
-      <nav>
-        <a href="#about" class="mm-link">About</a>
-        <a href="#services" class="mm-link">Services</a>
-        <a href="#sectors" class="mm-link">Sectors</a>
-        <a href="#projects" class="mm-link">Projects</a>
-        <a href="#contact" class="mm-link">Contact</a>
-      </nav>
-      <button class="mm-cta contact-trigger" type="button">Request Free Quote</button>
-    </div>
-
-    <main>
-
-      <!-- HERO -->
-      <section class="hero-section">
-        <div class="hero-bg">
-          <div class="hero-grid-overlay"></div>
-        </div>
-        <div class="hero-content container">
-          <div class="hero-copy">
-            <div class="hero-eyebrow">
-              <span class="hero-dot"></span>
-              Advanced Water Treatment Solutions
-            </div>
-            <h1>Industrial Water And<br/>Wastewater Treatment<br/><span class="hero-highlight">Solutions</span></h1>
-            <p class="hero-sub">Purifying Every Drop with Innovation &amp; Expertise &mdash; ✔ RO Plants | ✔ STP | ✔ ETP | ✔ Filtration Systems</p>
-            <div class="hero-actions">
-              <button class="btn-primary contact-trigger" type="button">
-                Request Free Quote
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </button>
-              <a href="#services" class="btn-ghost">Explore Services</a>
-            </div>
-            <div class="hero-trust">
-              <span>Trusted by 275+ enterprises</span>
-            </div>
+      <main>
+        <!-- HERO -->
+        <section class="hero-section">
+          <div class="hero-bg">
+            <div class="hero-grid-overlay"></div>
           </div>
-          <div class="hero-visual">
-            <div class="hero-card-stack">
-              <div class="hcs-main">
-                <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=700&q=80" alt="Water Treatment Plant" />
-                <div class="hcs-main-badge">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  ISO 9001 Certified
-                </div>
+          <div class="hero-content container">
+            <div class="hero-copy">
+              <div class="hero-eyebrow">
+                <span class="hero-dot"></span>
+                Advanced Water Treatment Solutions
               </div>
-              <div class="hcs-float hcs-float-1">
-                <div class="hcf-icon">&#128167;</div>
-                <div>
-                  <strong>99.8%</strong>
-                  <span>Efficiency</span>
-                </div>
+              <h1>
+                Industrial Water And<br />Wastewater Treatment<br /><span
+                  class="hero-highlight"
+                  >Solutions</span
+                >
+              </h1>
+              <p class="hero-sub">
+                Purifying Every Drop with Innovation &amp; Expertise &mdash; ✔
+                RO Plants | ✔ STP | ✔ ETP | ✔ Filtration Systems
+              </p>
+              <div class="hero-actions">
+                <button class="btn-primary contact-trigger" type="button">
+                  Request Free Quote
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                  </svg>
+                </button>
+                <a href="#services" class="btn-ghost">Explore Services</a>
               </div>
-              <div class="hcs-float hcs-float-2">
-                <div class="hcf-icon">&#9889;</div>
-                <div>
-                  <strong>24/7</strong>
-                  <span>Monitoring</span>
-                </div>
+              <div class="hero-trust">
+                <span>Trusted by 275+ enterprises</span>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- STATS BAR -->
-      <section class="stats-bar">
-        <div class="container stats-bar-inner">
-          <div class="stat-item" data-target="25">
-            <div class="si-num"><span class="stat-num">0</span><span class="stat-suf">+</span></div>
-            <p>Years Experience</p>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item" data-target="135">
-            <div class="si-num"><span class="stat-num">0</span></div>
-            <p>Team Members</p>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item" data-target="275">
-            <div class="si-num"><span class="stat-num">0</span><span class="stat-suf">+</span></div>
-            <p>Happy Clients</p>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item" data-target="360">
-            <div class="si-num"><span class="stat-num">0</span><span class="stat-suf">+</span></div>
-            <p>Projects Done</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section id="about" class="section about-section">
-        <div class="container about-grid">
-          <div class="about-media" data-aos="fade-right" data-aos-duration="900">
-            <div class="am-frame am-frame-main">
-              <img src="misc/about-1-f1ba29476efceb0df05543ba951b7917.jpg" alt="Industrial Water Plant" />
-            </div>
-            <div class="am-frame am-frame-sub">
-              <img src="misc/about-2-9bfc6c238b9e65fe8eff10da76232bfa.jpg" alt="Water Engineering" />
-            </div>
-            <div class="am-badge">
-              <div class="am-badge-num">25</div>
-              <div class="am-badge-text">Years of<br/>Excellence</div>
-            </div>
-            <div class="am-dots"></div>
-          </div>
-          <div class="about-copy" data-aos="fade-left" data-aos-duration="900" data-aos-delay="120">
-            <span class="eyebrow">Water Treatment Engineering</span>
-            <h2>Engineering industry-grade water systems with precision and scale.</h2>
-            <p>We combine high-end process engineering, intelligent automation, and advanced filtration technology to build industrial water treatment plants that drive operational continuity across complex facilities.</p>
-            <ul class="check-list">
-              <li>
-                <div class="cl-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
-                Custom RO &amp; membrane plant design
-              </li>
-              <li>
-                <div class="cl-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
-                Predictive monitoring &amp; digital controls
-              </li>
-              <li>
-                <div class="cl-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
-                Advanced process optimization
-              </li>
-              <li>
-                <div class="cl-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
-                Turnkey commissioning &amp; long-term service
-              </li>
-            </ul>
-            <div class="about-cta-row">
-              <button class="btn-primary contact-trigger" type="button">Request Free Quote</button>
-              <a href="tel:+919871151318" class="about-phone">
-                <div class="ap-icon">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.07A19.5 19.5 0 015.13 12.7a19.86 19.86 0 01-3.07-8.63A2 2 0 014.09 2h3a2 2 0 012 1.72c.12 1.05.38 2.08.78 3.05a2 2 0 01-.45 2.11L9.91 9.91a16 16 0 006 6l1.03-1.03a2 2 0 012.11-.45c.97.4 2 .66 3.05.78A2 2 0 0122 16.92z"/></svg>
+            <div class="hero-visual">
+              <div class="hero-card-stack">
+                <div class="hcs-main">
+                  <img
+                    src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=700&q=80"
+                    alt="Water Treatment Plant"
+                  />
+                  <div class="hcs-main-badge">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    ISO 9001 Certified
+                  </div>
                 </div>
-                <div>
-                  <em>Call Directly</em>
-                  <span>+91-9871151318</span>
+                <div class="hcs-float hcs-float-1">
+                  <div class="hcf-icon">&#128167;</div>
+                  <div>
+                    <strong>99.8%</strong>
+                    <span>Efficiency</span>
+                  </div>
+                </div>
+                <div class="hcs-float hcs-float-2">
+                  <div class="hcf-icon">&#9889;</div>
+                  <div>
+                    <strong>24/7</strong>
+                    <span>Monitoring</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- STATS BAR -->
+        <section class="stats-bar">
+          <div class="container stats-bar-inner">
+            <div class="stat-item" data-target="25">
+              <div class="si-num">
+                <span class="stat-num">0</span><span class="stat-suf">+</span>
+              </div>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item" data-target="135">
+              <div class="si-num"><span class="stat-num">0</span></div>
+              <p>Team Members</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item" data-target="275">
+              <div class="si-num">
+                <span class="stat-num">0</span><span class="stat-suf">+</span>
+              </div>
+              <p>Happy Clients</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item" data-target="360">
+              <div class="si-num">
+                <span class="stat-num">0</span><span class="stat-suf">+</span>
+              </div>
+              <p>Projects Done</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section about-section">
+          <div class="container about-grid">
+            <div
+              class="about-media"
+              data-aos="fade-right"
+              data-aos-duration="900"
+            >
+              <div class="am-frame am-frame-main">
+                <img
+                  src="misc/about-1-f1ba29476efceb0df05543ba951b7917.jpg"
+                  alt="Industrial Water Plant"
+                />
+              </div>
+              <div class="am-frame am-frame-sub">
+                <img
+                  src="misc/about-2-9bfc6c238b9e65fe8eff10da76232bfa.jpg"
+                  alt="Water Engineering"
+                />
+              </div>
+              <div class="am-badge">
+                <div class="am-badge-num">25</div>
+                <div class="am-badge-text">Years of<br />Excellence</div>
+              </div>
+              <div class="am-dots"></div>
+            </div>
+            <div
+              class="about-copy"
+              data-aos="fade-left"
+              data-aos-duration="900"
+              data-aos-delay="120"
+            >
+              <span class="eyebrow">Water Treatment Engineering</span>
+              <h2>
+                Engineering industry-grade water systems with precision and
+                scale.
+              </h2>
+              <p>
+                We combine high-end process engineering, intelligent automation,
+                and advanced filtration technology to build industrial water
+                treatment plants that drive operational continuity across
+                complex facilities.
+              </p>
+              <ul class="check-list">
+                <li>
+                  <div class="cl-icon">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </div>
+                  Custom RO &amp; membrane plant design
+                </li>
+                <li>
+                  <div class="cl-icon">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </div>
+                  Predictive monitoring &amp; digital controls
+                </li>
+                <li>
+                  <div class="cl-icon">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </div>
+                  Advanced process optimization
+                </li>
+                <li>
+                  <div class="cl-icon">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </div>
+                  Turnkey commissioning &amp; long-term service
+                </li>
+              </ul>
+              <div class="about-cta-row">
+                <button class="btn-primary contact-trigger" type="button">
+                  Request Free Quote
+                </button>
+                <a href="tel:+919871151318" class="about-phone">
+                  <div class="ap-icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.07A19.5 19.5 0 015.13 12.7a19.86 19.86 0 01-3.07-8.63A2 2 0 014.09 2h3a2 2 0 012 1.72c.12 1.05.38 2.08.78 3.05a2 2 0 01-.45 2.11L9.91 9.91a16 16 0 006 6l1.03-1.03a2 2 0 012.11-.45c.97.4 2 .66 3.05.78A2 2 0 0122 16.92z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <em>Call Directly</em>
+                    <span>+91-9871151318</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- WHY CHOOSE US -->
+        <section class="section choose-section">
+          <div class="container">
+            <div class="choose-grid">
+              <div
+                class="choose-visual"
+                data-aos="fade-right"
+                data-aos-duration="900"
+              >
+                <div class="cv-image">
+                  <img
+                    src="misc/feature-be18fb2ba79b631b365cfa9fe0981072.jpg"
+                    alt="Water Treatment Facility"
+                  />
+                </div>
+                <button
+                  class="cv-play contact-trigger"
+                  type="button"
+                  aria-label="Contact us"
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <polygon points="5 3 19 12 5 21 5 3" />
+                  </svg>
+                </button>
+                <div class="cv-accent-box">
+                  <strong>Zero Downtime</strong>
+                  <span>Guaranteed SLA</span>
+                </div>
+              </div>
+              <div
+                class="choose-copy"
+                data-aos="fade-left"
+                data-aos-duration="900"
+                data-aos-delay="120"
+              >
+                <span class="eyebrow">Why Choose Us</span>
+                <h2>
+                  Premium solutions built for large-scale industrial operations.
+                </h2>
+                <p>
+                  Our systems deliver unmatched efficiency, durability, and
+                  compliance for industrial sectors that demand zero downtime
+                  and superior water performance.
+                </p>
+                <div class="feature-list">
+                  <div class="fl-item">
+                    <div class="fl-num">01</div>
+                    <div>
+                      <h4>Robust RO Systems</h4>
+                      <p>
+                        Membrane plants built for high-capacity industrial reuse
+                        and process water.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="fl-item">
+                    <div class="fl-num">02</div>
+                    <div>
+                      <h4>Smart Plant Control</h4>
+                      <p>
+                        Remote analytics and predictive operations that maximize
+                        uptime.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="fl-item">
+                    <div class="fl-num">03</div>
+                    <div>
+                      <h4>Compliance Ready</h4>
+                      <p>
+                        Systems meeting all industrial discharge and reuse
+                        standards.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="fl-item">
+                    <div class="fl-num">04</div>
+                    <div>
+                      <h4>Dedicated Delivery</h4>
+                      <p>
+                        Commissioning, support and maintenance for enterprise
+                        clients.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="fl-item">
+                    <div class="fl-num">05</div>
+                    <div>
+                      <h4>Maximum Water Recovery</h4>
+                      <p>
+                        Maximized reuse with proprietary engineered efficiency
+                        protocols.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="section services-section">
+          <div class="container">
+            <div class="section-header" data-aos="fade-up">
+              <div>
+                <span class="eyebrow">Core Services</span>
+                <h2>
+                  Key offerings for industrial water<br />treatment and
+                  recycling.
+                </h2>
+              </div>
+            </div>
+            <div class="services-grid">
+              <article
+                class="service-card"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <div class="sc-media">
+                  <img
+                    src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=700&q=80"
+                    alt="RO Filtration"
+                  />
+                  <div class="sc-tag">RO Filtration</div>
+                </div>
+                <div class="sc-body">
+                  <h3>Reverse Osmosis Plants</h3>
+                  <p>
+                    High-efficiency membrane systems for industrial process
+                    water purification and waste recovery.
+                  </p>
+                  <button class="sc-link contact-trigger" type="button">
+                    Learn More
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                      <polyline points="12 5 19 12 12 19" />
+                    </svg>
+                  </button>
+                </div>
+              </article>
+              <article
+                class="service-card"
+                data-aos="fade-up"
+                data-aos-delay="80"
+              >
+                <div class="sc-media">
+                  <img
+                    src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=700&q=80"
+                    alt="Smart Automation"
+                  />
+                  <div class="sc-tag">Automation</div>
+                </div>
+                <div class="sc-body">
+                  <h3>Smart Plant Control</h3>
+                  <p>
+                    Integrated digital monitoring, real-time analytics, and
+                    predictive control for maximum efficiency.
+                  </p>
+                  <button class="sc-link contact-trigger" type="button">
+                    Learn More
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                      <polyline points="12 5 19 12 12 19" />
+                    </svg>
+                  </button>
+                </div>
+              </article>
+              <article
+                class="service-card"
+                data-aos="fade-up"
+                data-aos-delay="160"
+              >
+                <div class="sc-media">
+                  <img
+                    src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=700&q=80"
+                    alt="Maintenance"
+                  />
+                  <div class="sc-tag">Service</div>
+                </div>
+                <div class="sc-body">
+                  <h3>Maintenance &amp; Commissioning</h3>
+                  <p>
+                    Turnkey startup services, operator training, and long-term
+                    maintenance support contracts.
+                  </p>
+                  <button class="sc-link contact-trigger" type="button">
+                    Learn More
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                      <polyline points="12 5 19 12 12 19" />
+                    </svg>
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTORS -->
+        <section id="sectors" class="sectors-section">
+          <div class="container">
+            <div class="section-header" data-aos="fade-up">
+              <div>
+                <span class="eyebrow light">Our Sectors</span>
+                <h2>Industries we serve with<br />specialized solutions.</h2>
+              </div>
+            </div>
+            <div class="sectors-grid">
+              <a
+                href="#"
+                class="sector-card"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <img
+                  src="sectors/oil-industry-43fe89f14a541eed9ccccc6d7ee0ffe8.jpg"
+                  alt="Oil &amp; Gas"
+                />
+                <div class="sector-overlay">
+                  <h3>Oil &amp; Gas</h3>
+                  <p>
+                    Advanced reuse systems and effluent treatment engineered for
+                    refineries.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="sector-card"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <img
+                  src="sectors/sewage-treatment-plant-4337156_1280-1fd8977c0c16cfa76594966cfcbed5e8.jpg"
+                  alt="Municipal"
+                />
+                <div class="sector-overlay">
+                  <h3>Municipal</h3>
+                  <p>
+                    Large-scale sewage and water purification for city
+                    infrastructures.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="sector-card"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <img
+                  src="sectors/power-station-374097_1280-7a6c679f73ffee6c6701a98b7b98d69e.jpg"
+                  alt="Power Generation"
+                />
+                <div class="sector-overlay">
+                  <h3>Power Generation</h3>
+                  <p>
+                    Ultrapure boiler feed water and cooling tower treatment for
+                    power plants.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="sector-card"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <img
+                  src="sectors/lab-217043_1280-d0662236c724628be9130391d3da0083.jpg"
+                  alt="Chemicals &amp; Labs"
+                />
+                <div class="sector-overlay">
+                  <h3>Chemicals &amp; Labs</h3>
+                  <p>
+                    Deionized and high-purity water systems for laboratories and
+                    pharmaceuticals.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="sector-card"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <img
+                  src="sectors/mining-f9cdda2f3f1344da4f2dd65ca55f40c6.jpg"
+                  alt="Mining &amp; Minerals"
+                />
+                <div class="sector-overlay">
+                  <h3>Mining &amp; Minerals</h3>
+                  <p>
+                    Acid mine drainage treatment, process water recycling, and
+                    tailings management.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="sector-card"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <img
+                  src="sectors/cement-0a332a5df144e14c078fe8e32dac76ac.jpg"
+                  alt="Cement &amp; Infrastructure"
+                />
+                <div class="sector-overlay">
+                  <h3>Cement &amp; Infrastructure</h3>
+                  <p>
+                    Water conservation, dust suppression, and high-durability
+                    cooling systems.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="sector-card"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <img
+                  src="sectors/automobile-1da991b1b1352dfe8bebd7d2f6776981.jpg"
+                  alt="Automotive &amp; Manufacturing"
+                />
+                <div class="sector-overlay">
+                  <h3>Automotive</h3>
+                  <p>
+                    Wastewater recycling and paint shop water treatment for the
+                    automotive industry.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="sector-card"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <img
+                  src="sectors/food-6fc5710fd3995f7003f3daaedcda296f.jpg"
+                  alt="Food &amp; Beverage"
+                />
+                <div class="sector-overlay">
+                  <h3>Food &amp; Beverage</h3>
+                  <p>
+                    Strict compliance ingredient water and organic effluent
+                    treatment.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="sector-card"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <img
+                  src="sectors/hotel-7885138_1280-8180df5ca81d303839e0cc6e1c05cd2a.jpg"
+                  alt="Hospitality &amp; Commercial"
+                />
+                <div class="sector-overlay">
+                  <h3>Hospitality</h3>
+                  <p>
+                    Softening, heating, cooling, and greywater recycling systems
+                    for hotels.
+                  </p>
                 </div>
               </a>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- WHY CHOOSE US -->
-      <section class="section choose-section">
-        <div class="container">
-          <div class="choose-grid">
-            <div class="choose-visual" data-aos="fade-right" data-aos-duration="900">
-              <div class="cv-image">
-                <img src="misc/feature-be18fb2ba79b631b365cfa9fe0981072.jpg" alt="Water Treatment Facility" />
+        <!-- CLIENTS -->
+        <section class="clients-section" data-aos="fade-up">
+          <div class="container">
+            <p class="clients-label">Trusted by enterprises across sectors</p>
+            <div class="clients-grid">
+              <div class="cg-item">
+                <img
+                  src="clients/1-0ddb87d63f165bbf02c4587e1c2f9189.jpg"
+                  alt="Client"
+                />
               </div>
-              <button class="cv-play contact-trigger" type="button" aria-label="Contact us">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </button>
-              <div class="cv-accent-box">
-                <strong>Zero Downtime</strong>
-                <span>Guaranteed SLA</span>
+              <div class="cg-item">
+                <img
+                  src="clients/10-689af5ab42b98ae81568f6b461facaf0.jpg"
+                  alt="Client"
+                />
               </div>
-            </div>
-            <div class="choose-copy" data-aos="fade-left" data-aos-duration="900" data-aos-delay="120">
-              <span class="eyebrow">Why Choose Us</span>
-              <h2>Premium solutions built for large-scale industrial operations.</h2>
-              <p>Our systems deliver unmatched efficiency, durability, and compliance for industrial sectors that demand zero downtime and superior water performance.</p>
-              <div class="feature-list">
-                <div class="fl-item"><div class="fl-num">01</div><div><h4>Robust RO Systems</h4><p>Membrane plants built for high-capacity industrial reuse and process water.</p></div></div>
-                <div class="fl-item"><div class="fl-num">02</div><div><h4>Smart Plant Control</h4><p>Remote analytics and predictive operations that maximize uptime.</p></div></div>
-                <div class="fl-item"><div class="fl-num">03</div><div><h4>Compliance Ready</h4><p>Systems meeting all industrial discharge and reuse standards.</p></div></div>
-                <div class="fl-item"><div class="fl-num">04</div><div><h4>Dedicated Delivery</h4><p>Commissioning, support and maintenance for enterprise clients.</p></div></div>
-                <div class="fl-item"><div class="fl-num">05</div><div><h4>Maximum Water Recovery</h4><p>Maximized reuse with proprietary engineered efficiency protocols.</p></div></div>
+              <div class="cg-item">
+                <img
+                  src="clients/11-b79dc16f912005aae820fc3ad2d16eea.jpg"
+                  alt="Client"
+                />
+              </div>
+              <div class="cg-item">
+                <img
+                  src="clients/12-fc961d2a3efb6219185f6d09ed7a39c8.jpg"
+                  alt="Client"
+                />
+              </div>
+              <div class="cg-item">
+                <img
+                  src="clients/13-03b55dad957c995eab1ca9d7b17cffe7.jpg"
+                  alt="Client"
+                />
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- SERVICES -->
-      <section id="services" class="section services-section">
-        <div class="container">
-          <div class="section-header" data-aos="fade-up">
-            <div>
-              <span class="eyebrow">Core Services</span>
-              <h2>Key offerings for industrial water<br/>treatment and recycling.</h2>
+        <!-- PROJECTS -->
+        <section id="projects" class="projects-section">
+          <div class="projects-bg"></div>
+          <div class="container">
+            <div class="projects-header" data-aos="fade-up">
+              <div>
+                <span class="eyebrow light">Featured Projects</span>
+                <h2>
+                  Major installations delivered<br />for industrial clients.
+                </h2>
+              </div>
+              <div class="swiper-nav-btns">
+                <button class="snb-btn snb-prev" aria-label="Previous">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <polyline points="15 18 9 12 15 6" />
+                  </svg>
+                </button>
+                <button class="snb-btn snb-next" aria-label="Next">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <polyline points="9 18 15 12 9 6" />
+                  </svg>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="services-grid">
-            <article class="service-card" data-aos="fade-up" data-aos-delay="0">
-              <div class="sc-media">
-                <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=700&q=80" alt="RO Filtration" />
-                <div class="sc-tag">RO Filtration</div>
-              </div>
-              <div class="sc-body">
-                <h3>Reverse Osmosis Plants</h3>
-                <p>High-efficiency membrane systems for industrial process water purification and waste recovery.</p>
-                <button class="sc-link contact-trigger" type="button">Learn More <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
-              </div>
-            </article>
-            <article class="service-card" data-aos="fade-up" data-aos-delay="80">
-              <div class="sc-media">
-                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=700&q=80" alt="Smart Automation" />
-                <div class="sc-tag">Automation</div>
-              </div>
-              <div class="sc-body">
-                <h3>Smart Plant Control</h3>
-                <p>Integrated digital monitoring, real-time analytics, and predictive control for maximum efficiency.</p>
-                <button class="sc-link contact-trigger" type="button">Learn More <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
-              </div>
-            </article>
-            <article class="service-card" data-aos="fade-up" data-aos-delay="160">
-              <div class="sc-media">
-                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=700&q=80" alt="Maintenance" />
-                <div class="sc-tag">Service</div>
-              </div>
-              <div class="sc-body">
-                <h3>Maintenance &amp; Commissioning</h3>
-                <p>Turnkey startup services, operator training, and long-term maintenance support contracts.</p>
-                <button class="sc-link contact-trigger" type="button">Learn More <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- SECTORS -->
-      <section id="sectors" class="sectors-section">
-        <div class="container">
-          <div class="section-header" data-aos="fade-up">
-            <div>
-              <span class="eyebrow light">Our Sectors</span>
-              <h2>Industries we serve with<br/>specialized solutions.</h2>
-            </div>
-          </div>
-          <div class="sectors-grid">
-            <a href="#" class="sector-card" data-aos="fade-up" data-aos-delay="0">
-              <img src="sectors/oil-industry-43fe89f14a541eed9ccccc6d7ee0ffe8.jpg" alt="Oil &amp; Gas" />
-              <div class="sector-overlay">
-                <h3>Oil &amp; Gas</h3>
-                <p>Advanced reuse systems and effluent treatment engineered for refineries.</p>
-              </div>
-            </a>
-            <a href="#" class="sector-card" data-aos="fade-up" data-aos-delay="100">
-              <img src="sectors/sewage-treatment-plant-4337156_1280-1fd8977c0c16cfa76594966cfcbed5e8.jpg" alt="Municipal" />
-              <div class="sector-overlay">
-                <h3>Municipal</h3>
-                <p>Large-scale sewage and water purification for city infrastructures.</p>
-              </div>
-            </a>
-            <a href="#" class="sector-card" data-aos="fade-up" data-aos-delay="200">
-              <img src="sectors/power-station-374097_1280-7a6c679f73ffee6c6701a98b7b98d69e.jpg" alt="Power Generation" />
-              <div class="sector-overlay">
-                <h3>Power Generation</h3>
-                <p>Ultrapure boiler feed water and cooling tower treatment for power plants.</p>
-              </div>
-            </a>
-            <a href="#" class="sector-card" data-aos="fade-up" data-aos-delay="0">
-              <img src="sectors/lab-217043_1280-d0662236c724628be9130391d3da0083.jpg" alt="Chemicals &amp; Labs" />
-              <div class="sector-overlay">
-                <h3>Chemicals &amp; Labs</h3>
-                <p>Deionized and high-purity water systems for laboratories and pharmaceuticals.</p>
-              </div>
-            </a>
-            <a href="#" class="sector-card" data-aos="fade-up" data-aos-delay="100">
-              <img src="sectors/mining-f9cdda2f3f1344da4f2dd65ca55f40c6.jpg" alt="Mining &amp; Minerals" />
-              <div class="sector-overlay">
-                <h3>Mining &amp; Minerals</h3>
-                <p>Acid mine drainage treatment, process water recycling, and tailings management.</p>
-              </div>
-            </a>
-            <a href="#" class="sector-card" data-aos="fade-up" data-aos-delay="200">
-              <img src="sectors/cement-0a332a5df144e14c078fe8e32dac76ac.jpg" alt="Cement &amp; Infrastructure" />
-              <div class="sector-overlay">
-                <h3>Cement &amp; Infrastructure</h3>
-                <p>Water conservation, dust suppression, and high-durability cooling systems.</p>
-              </div>
-            </a>
-            <a href="#" class="sector-card" data-aos="fade-up" data-aos-delay="0">
-              <img src="sectors/automobile-1da991b1b1352dfe8bebd7d2f6776981.jpg" alt="Automotive &amp; Manufacturing" />
-              <div class="sector-overlay">
-                <h3>Automotive</h3>
-                <p>Wastewater recycling and paint shop water treatment for the automotive industry.</p>
-              </div>
-            </a>
-            <a href="#" class="sector-card" data-aos="fade-up" data-aos-delay="100">
-              <img src="sectors/food-6fc5710fd3995f7003f3daaedcda296f.jpg" alt="Food &amp; Beverage" />
-              <div class="sector-overlay">
-                <h3>Food &amp; Beverage</h3>
-                <p>Strict compliance ingredient water and organic effluent treatment.</p>
-              </div>
-            </a>
-            <a href="#" class="sector-card" data-aos="fade-up" data-aos-delay="200">
-              <img src="sectors/hotel-7885138_1280-8180df5ca81d303839e0cc6e1c05cd2a.jpg" alt="Hospitality &amp; Commercial" />
-              <div class="sector-overlay">
-                <h3>Hospitality</h3>
-                <p>Softening, heating, cooling, and greywater recycling systems for hotels.</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- CLIENTS -->
-      <section class="clients-section" data-aos="fade-up">
-        <div class="container">
-          <p class="clients-label">Trusted by enterprises across sectors</p>
-          <div class="clients-grid">
-            <div class="cg-item"><img src="clients/1-0ddb87d63f165bbf02c4587e1c2f9189.jpg" alt="Client" /></div>
-            <div class="cg-item"><img src="clients/10-689af5ab42b98ae81568f6b461facaf0.jpg" alt="Client" /></div>
-            <div class="cg-item"><img src="clients/11-b79dc16f912005aae820fc3ad2d16eea.jpg" alt="Client" /></div>
-            <div class="cg-item"><img src="clients/12-fc961d2a3efb6219185f6d09ed7a39c8.jpg" alt="Client" /></div>
-            <div class="cg-item"><img src="clients/13-03b55dad957c995eab1ca9d7b17cffe7.jpg" alt="Client" /></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROJECTS -->
-      <section id="projects" class="projects-section">
-        <div class="projects-bg"></div>
-        <div class="container">
-          <div class="projects-header" data-aos="fade-up">
-            <div>
-              <span class="eyebrow light">Featured Projects</span>
-              <h2>Major installations delivered<br/>for industrial clients.</h2>
-            </div>
-            <div class="swiper-nav-btns">
-              <button class="snb-btn snb-prev" aria-label="Previous">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
-              </button>
-              <button class="snb-btn snb-next" aria-label="Next">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
-              </button>
-            </div>
-          </div>
-          <div class="swiper project-swiper" data-aos="fade-up" data-aos-delay="100">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="project-slide" style="background-image:url('https://images.unsplash.com/photo-1529551739587-e242c564f727?w=1000&q=80')">
-                  <div class="ps-overlay"></div>
-                  <div class="ps-content">
-                    <span class="ps-sector">Sector: Sewage Treatment</span>
-                    <h3>Wastewater Treatment Upgrade</h3>
-                    <p>Sustainable treatment system for a large municipal sewage plant with improved energy efficiency and process control.</p>
-                    <button class="ps-btn contact-trigger" type="button">View Project</button>
+            <div
+              class="swiper project-swiper"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div
+                    class="project-slide"
+                    style="
+                      background-image: url(&quot;https://images.unsplash.com/photo-1529551739587-e242c564f727?w=1000&q=80&quot;);
+                    "
+                  >
+                    <div class="ps-overlay"></div>
+                    <div class="ps-content">
+                      <span class="ps-sector">Sector: Sewage Treatment</span>
+                      <h3>Wastewater Treatment Upgrade</h3>
+                      <p>
+                        Sustainable treatment system for a large municipal
+                        sewage plant with improved energy efficiency and process
+                        control.
+                      </p>
+                      <button class="ps-btn contact-trigger" type="button">
+                        View Project
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="project-slide"
+                    style="
+                      background-image: url(&quot;https://images.unsplash.com/photo-1467533003447-e295ff1b0435?w=1000&q=80&quot;);
+                    "
+                  >
+                    <div class="ps-overlay"></div>
+                    <div class="ps-content">
+                      <span class="ps-sector">Sector: Oil &amp; Gas</span>
+                      <h3>Industrial Process Water Supply</h3>
+                      <p>
+                        Robust water treatment and reuse systems for a refinery
+                        project with strict regulatory compliance.
+                      </p>
+                      <button class="ps-btn contact-trigger" type="button">
+                        View Project
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="project-slide"
+                    style="
+                      background-image: url(&quot;https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1000&q=80&quot;);
+                    "
+                  >
+                    <div class="ps-overlay"></div>
+                    <div class="ps-content">
+                      <span class="ps-sector">Sector: Cement &amp; Mining</span>
+                      <h3>Heavy Industry Filtration</h3>
+                      <p>
+                        Engineered filtration and chemical dosing for a cement
+                        facility to reduce waste and improve production uptime.
+                      </p>
+                      <button class="ps-btn contact-trigger" type="button">
+                        View Project
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="project-slide" style="background-image:url('https://images.unsplash.com/photo-1467533003447-e295ff1b0435?w=1000&q=80')">
-                  <div class="ps-overlay"></div>
-                  <div class="ps-content">
-                    <span class="ps-sector">Sector: Oil &amp; Gas</span>
-                    <h3>Industrial Process Water Supply</h3>
-                    <p>Robust water treatment and reuse systems for a refinery project with strict regulatory compliance.</p>
-                    <button class="ps-btn contact-trigger" type="button">View Project</button>
-                  </div>
-                </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA BANNER -->
+        <section class="cta-banner">
+          <div class="cta-bg"></div>
+          <div class="container cta-inner" data-aos="fade-up">
+            <div class="cta-copy">
+              <h2>Ready to upgrade your water treatment infrastructure?</h2>
+              <p>
+                Talk to our engineers today. Free consultation, custom proposal
+                within 48 hours.
+              </p>
+            </div>
+            <div class="cta-actions">
+              <button class="btn-primary contact-trigger" type="button">
+                Get Free Consultation
+              </button>
+              <a href="tel:+919871151318" class="btn-outline-white">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.07A19.5 19.5 0 015.13 12.7a19.86 19.86 0 01-3.07-8.63A2 2 0 014.09 2h3a2 2 0 012 1.72c.12 1.05.38 2.08.78 3.05a2 2 0 01-.45 2.11L9.91 9.91a16 16 0 006 6l1.03-1.03a2 2 0 012.11-.45c.97.4 2 .66 3.05.78A2 2 0 0122 16.92z"
+                  />
+                </svg>
+                Call Now
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="footer-section" id="contact">
+        <div class="footer-top">
+          <div class="container footer-grid">
+            <div class="fc-brand">
+              <div class="footer-logo">
+                <img
+                  src="logo/mainlogo.png"
+                  alt="WaterTech Engineering Logo"
+                  class="brand-logo"
+                />
               </div>
-              <div class="swiper-slide">
-                <div class="project-slide" style="background-image:url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1000&q=80')">
-                  <div class="ps-overlay"></div>
-                  <div class="ps-content">
-                    <span class="ps-sector">Sector: Cement &amp; Mining</span>
-                    <h3>Heavy Industry Filtration</h3>
-                    <p>Engineered filtration and chemical dosing for a cement facility to reduce waste and improve production uptime.</p>
-                    <button class="ps-btn contact-trigger" type="button">View Project</button>
-                  </div>
-                </div>
+              <p>
+                Premium industrial water treatment design, construction, and
+                managed services. 25+ years serving enterprise clients
+                worldwide.
+              </p>
+              <div class="footer-social">
+                <a href="#" aria-label="LinkedIn">in</a>
+                <a href="#" aria-label="Twitter">tw</a>
+                <a href="#" aria-label="YouTube">yt</a>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA BANNER -->
-      <section class="cta-banner">
-        <div class="cta-bg"></div>
-        <div class="container cta-inner" data-aos="fade-up">
-          <div class="cta-copy">
-            <h2>Ready to upgrade your water treatment infrastructure?</h2>
-            <p>Talk to our engineers today. Free consultation, custom proposal within 48 hours.</p>
-          </div>
-          <div class="cta-actions">
-            <button class="btn-primary contact-trigger" type="button">Get Free Consultation</button>
-            <a href="tel:+919871151318" class="btn-outline-white">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.07A19.5 19.5 0 015.13 12.7a19.86 19.86 0 01-3.07-8.63A2 2 0 014.09 2h3a2 2 0 012 1.72c.12 1.05.38 2.08.78 3.05a2 2 0 01-.45 2.11L9.91 9.91a16 16 0 006 6l1.03-1.03a2 2 0 012.11-.45c.97.4 2 .66 3.05.78A2 2 0 0122 16.92z"/></svg>
-              Call Now
-            </a>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer-section" id="contact">
-      <div class="footer-top">
-        <div class="container footer-grid">
-          <div class="fc-brand">
-            <div class="footer-logo">
-              <img src="logo/mainlogo.png" alt="WaterTech Engineering Logo" class="brand-logo" />
+            <div class="fc-links">
+              <h4>Company</h4>
+              <a href="#about">About Us</a>
+              <a href="#services">Services</a>
+              <a href="#sectors">Sectors</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
             </div>
-            <p>Premium industrial water treatment design, construction, and managed services. 25+ years serving enterprise clients worldwide.</p>
-            <div class="footer-social">
-              <a href="#" aria-label="LinkedIn">in</a>
-              <a href="#" aria-label="Twitter">tw</a>
-              <a href="#" aria-label="YouTube">yt</a>
+            <div class="fc-links">
+              <h4>Contact</h4>
+              <a href="mailto:hello@watertech.com">hello@watertech.com</a>
+              <a href="tel:+919871151318">+91-9871151318</a>
+              <a href="#">123 Industrial Way, Houston, TX</a>
+            </div>
+            <div class="fc-form">
+              <h4>Quick Inquiry</h4>
+              <form id="footerForm" class="footer-form">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email address"
+                  required
+                />
+                <textarea
+                  name="message"
+                  placeholder="Project details"
+                  rows="3"
+                ></textarea>
+                <button type="submit" class="ff-btn">Send Inquiry</button>
+              </form>
             </div>
           </div>
-          <div class="fc-links">
-            <h4>Company</h4>
-            <a href="#about">About Us</a>
-            <a href="#services">Services</a>
-            <a href="#sectors">Sectors</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-          </div>
-          <div class="fc-links">
-            <h4>Contact</h4>
-            <a href="mailto:hello@watertech.com">hello@watertech.com</a>
-            <a href="tel:+919871151318">+91-9871151318</a>
-            <a href="#">123 Industrial Way, Houston, TX</a>
-          </div>
-          <div class="fc-form">
-            <h4>Quick Inquiry</h4>
-            <form id="footerForm" class="footer-form">
-              <input type="text" name="name" placeholder="Your name" required />
-              <input type="email" name="email" placeholder="Email address" required />
-              <textarea name="message" placeholder="Project details" rows="3"></textarea>
-              <button type="submit" class="ff-btn">Send Inquiry</button>
-            </form>
+        </div>
+        <div class="footer-bottom">
+          <div class="container fb-inner">
+            <p>&copy; 2026 WaterTech Engineering. All rights reserved.</p>
+            <div class="footer-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms</a>
+              <a href="#">Support</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="container fb-inner">
-          <p>&copy; 2026 WaterTech Engineering. All rights reserved.</p>
-          <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms</a>
-            <a href="#">Support</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-  </div>
-
-  <!-- LIGHTBOX MODAL -->
-  <div id="lightboxModal" class="lightbox-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lightboxCaption">
-    <div class="lightbox-backdrop"></div>
-    <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-    <div class="lightbox-content">
-      <img id="lightboxImage" src="" alt="Sector Full View" />
-      <div class="lightbox-caption" id="lightboxCaption"></div>
+      </footer>
     </div>
-  </div>
 
-  <!-- CONTACT MODAL -->
-  <div id="contactModal" class="modal-overlay" aria-hidden="true">
-    <div class="modal-backdrop"></div>
-    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close" id="modalClose" aria-label="Close">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    <!-- LIGHTBOX MODAL -->
+    <div
+      id="lightboxModal"
+      class="lightbox-overlay"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="lightboxCaption"
+    >
+      <div class="lightbox-backdrop"></div>
+      <button
+        class="lightbox-close"
+        id="lightboxClose"
+        aria-label="Close Lightbox"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+        >
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
       </button>
-      <div class="modal-header">
-        <span class="eyebrow">Let's Connect</span>
-        <h2 id="modalTitle">Quick Inquiry</h2>
-        <p>Share your details &mdash; we'll reply within 24 hours.</p>
+      <div class="lightbox-content">
+        <img id="lightboxImage" src="" alt="Sector Full View" />
+        <div class="lightbox-caption" id="lightboxCaption"></div>
       </div>
-      <form class="contact-form" id="contactForm">
-        <div class="cf-group">
-          <input type="text" id="cf-name" name="name" placeholder=" " required autocomplete="name" />
-          <label for="cf-name">Full Name</label>
-        </div>
-        <div class="cf-group">
-          <input type="tel" id="cf-phone" name="phone" placeholder=" " required autocomplete="tel" />
-          <label for="cf-phone">Mobile Number</label>
-        </div>
-        <div class="cf-group">
-          <input type="email" id="cf-email" name="email" placeholder=" " autocomplete="email" />
-          <label for="cf-email">Email Address</label>
-        </div>
-        <div class="cf-group">
-          <textarea id="cf-msg" name="message" placeholder=" " rows="4"></textarea>
-          <label for="cf-msg">Project Details</label>
-        </div>
-        <button type="submit" class="btn-primary cf-submit">
-          <span>Send Request</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </button>
-        <p class="cf-note">We respond within 24 hours. No spam ever.</p>
-      </form>
     </div>
-  </div>
 
-  <!-- FLOATING BUTTONS -->
-  <a href="https://wa.me/919871151318?text=Hello%20WaterTech%20Team" class="fab fab-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20.52 3.48A11.92 11.92 0 0012.03.5C6.01.5.98 5.53.98 11.55c0 1.96.51 3.88 1.47 5.56L.5 23.5l6.61-1.62a11.96 11.96 0 005.93 1.6c6.02 0 11.05-5.03 11.05-11.05 0-3.01-1.18-5.82-3.57-7.95z" fill="#25D366"/><path d="M17.1 14.07c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.17.2-.34.22-.64.07-.3-.15-1.27-.47-2.42-1.48-.9-.8-1.51-1.8-1.68-2.1-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.68-1.64-.93-2.25-.24-.59-.48-.51-.66-.52-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.28.3-1.06 1.04-1.06 2.53s1.08 2.94 1.23 3.15c.15.22 2.12 3.3 5.14 4.62 3.02 1.32 3.02.88 3.56.83.54-.05 1.77-.73 2.02-1.44.25-.72.25-1.34.18-1.47-.07-.13-.27-.2-.57-.35z" fill="#fff"/></svg>
-  </a>
-  <a href="tel:+919871151318" class="fab fab-call" aria-label="Call us">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.07A19.5 19.5 0 015.13 12.7a19.86 19.86 0 01-3.07-8.63A2 2 0 014.09 2h3a2 2 0 012 1.72c.12 1.05.38 2.08.78 3.05a2 2 0 01-.45 2.11L9.91 9.91a16 16 0 006 6l1.03-1.03a2 2 0 012.11-.45c.97.4 2 .66 3.05.78A2 2 0 0122 16.92z" fill="white"/></svg>
-  </a>
+    <!-- CONTACT MODAL -->
+    <div id="contactModal" class="modal-overlay" aria-hidden="true">
+      <div class="modal-backdrop"></div>
+      <div
+        class="modal-box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <button class="modal-close" id="modalClose" aria-label="Close">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+        <div class="modal-header">
+          <span class="eyebrow">Let's Connect</span>
+          <h2 id="modalTitle">Quick Inquiry</h2>
+          <p>Share your details &mdash; we'll reply within 24 hours.</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="cf-group">
+            <input
+              type="text"
+              id="cf-name"
+              name="name"
+              placeholder=" "
+              required
+              autocomplete="name"
+            />
+            <label for="cf-name">Full Name</label>
+          </div>
+          <div class="cf-group">
+            <input
+              type="tel"
+              id="cf-phone"
+              name="phone"
+              placeholder=" "
+              required
+              autocomplete="tel"
+            />
+            <label for="cf-phone">Mobile Number</label>
+          </div>
+          <div class="cf-group">
+            <input
+              type="email"
+              id="cf-email"
+              name="email"
+              placeholder=" "
+              autocomplete="email"
+            />
+            <label for="cf-email">Email Address</label>
+          </div>
+          <div class="cf-group">
+            <textarea
+              id="cf-msg"
+              name="message"
+              placeholder=" "
+              rows="4"
+            ></textarea>
+            <label for="cf-msg">Project Details</label>
+          </div>
+          <button type="submit" class="btn-primary cf-submit">
+            <span>Send Request</span>
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </button>
+          <p class="cf-note">We respond within 24 hours. No spam ever.</p>
+        </form>
+      </div>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+    <!-- FLOATING BUTTONS -->
+    <a
+      href="https://wa.me/919871151318?text=Hello%20WaterTech%20Team"
+      class="fab fab-whatsapp"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="WhatsApp"
+    >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M20.52 3.48A11.92 11.92 0 0012.03.5C6.01.5.98 5.53.98 11.55c0 1.96.51 3.88 1.47 5.56L.5 23.5l6.61-1.62a11.96 11.96 0 005.93 1.6c6.02 0 11.05-5.03 11.05-11.05 0-3.01-1.18-5.82-3.57-7.95z"
+          fill="#25D366"
+        />
+        <path
+          d="M17.1 14.07c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.17.2-.34.22-.64.07-.3-.15-1.27-.47-2.42-1.48-.9-.8-1.51-1.8-1.68-2.1-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.68-1.64-.93-2.25-.24-.59-.48-.51-.66-.52-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.28.3-1.06 1.04-1.06 2.53s1.08 2.94 1.23 3.15c.15.22 2.12 3.3 5.14 4.62 3.02 1.32 3.02.88 3.56.83.54-.05 1.77-.73 2.02-1.44.25-.72.25-1.34.18-1.47-.07-.13-.27-.2-.57-.35z"
+          fill="#fff"
+        />
+      </svg>
+    </a>
+    <a href="tel:+919871151318" class="fab fab-call" aria-label="Call us">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M22 16.92v3a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.07A19.5 19.5 0 015.13 12.7a19.86 19.86 0 01-3.07-8.63A2 2 0 014.09 2h3a2 2 0 012 1.72c.12 1.05.38 2.08.78 3.05a2 2 0 01-.45 2.11L9.91 9.91a16 16 0 006 6l1.03-1.03a2 2 0 012.11-.45c.97.4 2 .66 3.05.78A2 2 0 0122 16.92z"
+          fill="white"
+        />
+      </svg>
+    </a>
 
-  <!-- Floating CTA Buttons -->
-  <div class="floating-cta">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Floating CTA Buttons -->
+    <!-- <div class="floating-cta">
     <a href="https://wa.me/919871151318" target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
       WhatsApp
     </a>
     <a href="tel:+919871151318" class="call-btn" aria-label="Call">
       Call Now
     </a>
-  </div>
+  </div> -->
 
-  <style>
-    .floating-cta{
-      position:fixed;
-      right:20px;
-      bottom:20px;
-      display:flex;
-      flex-direction:column;
-      gap:12px;
-      z-index:9999;
-    }
-    .floating-cta a{
-      text-decoration:none;
-      color:#fff;
-      font-weight:700;
-      padding:14px 20px;
-      border-radius:50px;
-      box-shadow:0 8px 25px rgba(0,0,0,0.2);
-      transition:0.3s ease;
-      font-family:Arial,sans-serif;
-      text-align:center;
-    }
-    .whatsapp-btn{
-      background:#25D366;
-    }
-    .call-btn{
-      background:#0d6efd;
-    }
-    .floating-cta a:hover{
-      transform:translateY(-3px);
-    }
-    @media(max-width:768px){
-      .floating-cta{
-        right:14px;
-        bottom:14px;
+    <style>
+      .floating-cta {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        z-index: 9999;
       }
-      .floating-cta a{
-        padding:12px 16px;
-        font-size:14px;
+      .floating-cta a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+        padding: 14px 20px;
+        border-radius: 50px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        transition: 0.3s ease;
+        font-family: Arial, sans-serif;
+        text-align: center;
       }
-    }
-  </style>
-
-</body>
+      .whatsapp-btn {
+        background: #25d366;
+      }
+      .call-btn {
+        background: #0d6efd;
+      }
+      .floating-cta a:hover {
+        transform: translateY(-3px);
+      }
+      @media (max-width: 768px) {
+        .floating-cta {
+          right: 14px;
+          bottom: 14px;
+        }
+        .floating-cta a {
+          padding: 12px 16px;
+          font-size: 14px;
+        }
+      }
+    </style>
+  </body>
 </html>
