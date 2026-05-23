@@ -337,4 +337,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  const moreToggle = document.querySelector('.more-toggle');
+  const hiddenChecklistItems = document.querySelectorAll('.check-list .hidden-item');
+  if (moreToggle && hiddenChecklistItems.length) {
+    moreToggle.addEventListener('click', () => {
+      const expanded = moreToggle.getAttribute('aria-expanded') === 'true';
+      hiddenChecklistItems.forEach(item => {
+        item.style.display = expanded ? 'none' : 'flex';
+      });
+      moreToggle.setAttribute('aria-expanded', (!expanded).toString());
+      moreToggle.textContent = expanded ? 'View more points' : 'Show fewer points';
+    });
+  }
+
 });

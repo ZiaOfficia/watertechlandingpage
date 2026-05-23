@@ -873,9 +873,9 @@ ul { list-style: none; }
 .about-section { background: var(--off-white); }
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.9fr 1.1fr;
   gap: 80px;
-  align-items: center;
+  align-items: start;
 }
 
 .about-media {
@@ -974,6 +974,35 @@ ul { list-style: none; }
   transition: all .3s var(--ease);
 }
 .check-list li:hover { transform: translateX(4px); box-shadow: var(--shadow-card); }
+.check-list .hidden-item { display: none; }
+.more-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 56px;
+  padding: 14px 18px;
+  margin-bottom: 32px;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--accent);
+  background: var(--white);
+  color: var(--text-dark);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: transform .25s var(--ease), box-shadow .25s var(--ease), background .25s var(--ease);
+}
+.more-toggle:hover {
+  transform: translateX(2px);
+  box-shadow: var(--shadow-card);
+  background: rgba(249, 250, 251, 0.95);
+}
+.more-toggle:focus {
+  outline: 2px solid var(--blue-500);
+  outline-offset: 3px;
+}
 .cl-icon {
   width: 24px; height: 24px;
   border-radius: 50%;
