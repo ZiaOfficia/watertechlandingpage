@@ -305,23 +305,112 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  /* ── SMOOTH SCROLL FOR NAV ────────────── */
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
+  /* ── URL ROUTING (History API) ───────── */
+  const routeMap = {
+    '/about':    '#about',
+    '/services': '#services',
+    '/sectors':  '#sectors',
+    '/projects': '#projects',
+    '/contact':  '#contact',
+  };
+
+  function scrollToSection(sectionId) {
+    const target = document.querySelector(sectionId);
+    if (!target) return;
+    const navH = navbar ? navbar.offsetHeight : 0;
+    const top = target.getBoundingClientRect().top + window.scrollY - navH - 16;
+    window.scrollTo({ top, behavior: 'smooth' });
+  }
+
+  function setActiveNavLink(path) {
+    document.querySelectorAll('.nav-link, .mm-link').forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === path);
+    });
+  }
+
+  // Intercept clicks on route links
+  document.querySelectorAll('a[href^="/"]').forEach(link => {
     link.addEventListener('click', function (e) {
       const href = this.getAttribute('href');
-      if (href === '#' || href === '') return;
-      try {
-        const target = document.querySelector(href);
-        if (!target) return;
+      if (href === '/') {
         e.preventDefault();
-        const navH = navbar ? navbar.offsetHeight : 0;
-        const top = target.getBoundingClientRect().top + window.scrollY - navH - 16;
-        window.scrollTo({ top, behavior: 'smooth' });
-      } catch (err) {
-        console.warn('Invalid scroll target:', href);
+        history.pushState(null, '', '/');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        setActiveNavLink('/');
+        return;
       }
+      const sectionId = routeMap[href];
+      if (!sectionId) return; // let browser handle real external links
+      e.preventDefault();
+      history.pushState(null, '', href);
+      scrollToSection(sectionId);
+      setActiveNavLink(href);
     });
   });
+
+  // Handle browser back/forward
+  window.addEventListener('popstate', () => {
+    const path = window.location.pathname;
+    const sectionId = routeMap[path];
+    if (sectionId) {
+      scrollToSection(sectionId);
+      setActiveNavLink(path);
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setActiveNavLink('/');
+    }
+  });
+
+  // On page load, scroll to section if URL has a route path
+  (function handleInitialRoute() {
+    const path = window.location.pathname;
+    const sectionId = routeMap[path];
+    if (sectionId) {
+      // Small delay so page renders before scrolling
+      setTimeout(() => {
+        scrollToSection(sectionId);
+        setActiveNavLink(path);
+      }, 300);
+    }
+  })();
+
+  // Update URL as user scrolls through sections
+  const sections = [
+    { id: 'about',    path: '/about'    },
+    { id: 'services', path: '/services' },
+    { id: 'sectors',  path: '/sectors'  },
+    { id: 'projects', path: '/projects' },
+    { id: 'contact',  path: '/contact'  },
+  ];
+
+  const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const match = sections.find(s => s.id === entry.target.id);
+      if (!match) return;
+      history.replaceState(null, '', match.path);
+      setActiveNavLink(match.path);
+    });
+  }, { threshold: 0.35 });
+
+  sections.forEach(s => {
+    const el = document.getElementById(s.id);
+    if (el) scrollObserver.observe(el);
+  });
+
+  // Reset URL to '/' when scrolled back near top (above about section)
+  const heroSection = document.querySelector('.hero-section');
+  if (heroSection) {
+    const heroObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          history.replaceState(null, '', '/');
+          setActiveNavLink('/');
+        }
+      });
+    }, { threshold: 0.4 });
+    heroObserver.observe(heroSection);
+  }
 
   /* ── HERO ENTRANCE ANIMATION ─────────── */
   const heroCopy = document.querySelector('.hero-copy');
