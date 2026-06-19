@@ -87,19 +87,20 @@
         <form class="welcome-form" id="welcomeForm">
           <div class="wf-group">
             <input type="text" name="name" id="wf-name" placeholder=" " required autocomplete="name" />
-            <label for="wf-name">Full Name</label>
+            <label for="wf-name">Full Name <span class="req-star" aria-hidden="true">*</span></label>
+          </div>
+          <div class="wf-group phone-group">
+            <input type="tel" name="phone" id="wf-phone" placeholder=" " required autocomplete="tel" maxlength="10" pattern="[0-9]{10}" inputmode="numeric" />
+            <label for="wf-phone">Phone Number <span class="req-star" aria-hidden="true">*</span></label>
+            <span class="phone-cc" aria-hidden="true">+91</span>
           </div>
           <div class="wf-group">
-            <input type="tel" name="phone" id="wf-phone" placeholder=" " required autocomplete="tel" />
-            <label for="wf-phone">Phone Number</label>
+            <input type="email" name="email" id="wf-email" placeholder=" " required autocomplete="email" />
+            <label for="wf-email">Email Address <span class="req-star" aria-hidden="true">*</span></label>
           </div>
           <div class="wf-group">
-            <input type="email" name="email" id="wf-email" placeholder=" " autocomplete="email" />
-            <label for="wf-email">Email Address</label>
-          </div>
-          <div class="wf-group">
-            <textarea name="message" id="wf-msg" placeholder=" " rows="3"></textarea>
-            <label for="wf-msg">Project Details</label>
+            <textarea name="message" id="wf-msg" placeholder=" " rows="3" required></textarea>
+            <label for="wf-msg">Project Details <span class="req-star" aria-hidden="true">*</span></label>
           </div>
           <button type="submit" class="wf-submit">
             <span>Request Free Consultation</span>
@@ -593,6 +594,130 @@
               </div>
             </article>
           </div>
+
+          <!-- PLANT CAPACITY TABLE -->
+          <div class="cap-section" data-aos="fade-up" data-aos-delay="60">
+            <div class="cap-intro">
+              <div class="cap-intro-text">
+                <span class="eyebrow">Capacity Specifications</span>
+                <h3 class="cap-title">Plant Capacity Range</h3>
+                <p class="cap-sub">From compact pilot units to full-scale industrial installations — engineered for your exact requirement.</p>
+              </div>
+              <div class="cap-intro-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                Customised to Scale
+              </div>
+            </div>
+
+            <div class="cap-table">
+              <!-- Header -->
+              <div class="cap-thead">
+                <div class="cap-th">Plant Type</div>
+                <div class="cap-th">Capacity Range</div>
+                <div class="cap-th cap-th-bar">Scale Indicator</div>
+              </div>
+
+              <!-- RO Plant -->
+              <div class="cap-row" data-aos="fade-up" data-aos-delay="0">
+                <div class="cap-td">
+                  <span class="cap-badge" style="--bc:#1e5fbb;--bb:rgba(30,95,187,.1)">
+                    <span class="cap-dot" style="background:#1e5fbb"></span>
+                    RO Plant
+                  </span>
+                </div>
+                <div class="cap-td cap-range">
+                  <span class="cap-from">250 LPH</span>
+                  <span class="cap-arrow">
+                    <svg width="40" height="8" viewBox="0 0 40 8"><line x1="0" y1="4" x2="34" y2="4" stroke="currentColor" stroke-width="1.5"/><polyline points="30,1 36,4 30,7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+                  </span>
+                  <span class="cap-to">1,00,000+ LPH</span>
+                </div>
+                <div class="cap-td cap-bar-cell">
+                  <div class="cap-track">
+                    <div class="cap-fill" style="--w:100%;--fc:#1e5fbb"></div>
+                  </div>
+                  <span class="cap-label">Widest Range</span>
+                </div>
+              </div>
+
+              <!-- DM Plant -->
+              <div class="cap-row" data-aos="fade-up" data-aos-delay="60">
+                <div class="cap-td">
+                  <span class="cap-badge" style="--bc:#00b4d8;--bb:rgba(0,180,216,.1)">
+                    <span class="cap-dot" style="background:#00b4d8"></span>
+                    DM Plant
+                  </span>
+                </div>
+                <div class="cap-td cap-range">
+                  <span class="cap-from">250 LPH</span>
+                  <span class="cap-arrow">
+                    <svg width="40" height="8" viewBox="0 0 40 8"><line x1="0" y1="4" x2="34" y2="4" stroke="currentColor" stroke-width="1.5"/><polyline points="30,1 36,4 30,7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+                  </span>
+                  <span class="cap-to">50,000+ LPH</span>
+                </div>
+                <div class="cap-td cap-bar-cell">
+                  <div class="cap-track">
+                    <div class="cap-fill" style="--w:75%;--fc:#00b4d8"></div>
+                  </div>
+                  <span class="cap-label">50 KL / hr</span>
+                </div>
+              </div>
+
+              <!-- STP Plant -->
+              <div class="cap-row" data-aos="fade-up" data-aos-delay="120">
+                <div class="cap-td">
+                  <span class="cap-badge" style="--bc:#10b981;--bb:rgba(16,185,129,.1)">
+                    <span class="cap-dot" style="background:#10b981"></span>
+                    STP Plant
+                  </span>
+                </div>
+                <div class="cap-td cap-range">
+                  <span class="cap-from">5 KLD</span>
+                  <span class="cap-arrow">
+                    <svg width="40" height="8" viewBox="0 0 40 8"><line x1="0" y1="4" x2="34" y2="4" stroke="currentColor" stroke-width="1.5"/><polyline points="30,1 36,4 30,7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+                  </span>
+                  <span class="cap-to">5,000+ KLD</span>
+                </div>
+                <div class="cap-td cap-bar-cell">
+                  <div class="cap-track">
+                    <div class="cap-fill" style="--w:65%;--fc:#10b981"></div>
+                  </div>
+                  <span class="cap-label">5 MLD cap.</span>
+                </div>
+              </div>
+
+              <!-- ETP / WWTP -->
+              <div class="cap-row" data-aos="fade-up" data-aos-delay="180">
+                <div class="cap-td">
+                  <span class="cap-badge" style="--bc:#f59e0b;--bb:rgba(245,158,11,.1)">
+                    <span class="cap-dot" style="background:#f59e0b"></span>
+                    ETP / WWTP
+                  </span>
+                </div>
+                <div class="cap-td cap-range">
+                  <span class="cap-from">5 KLD</span>
+                  <span class="cap-arrow">
+                    <svg width="40" height="8" viewBox="0 0 40 8"><line x1="0" y1="4" x2="34" y2="4" stroke="currentColor" stroke-width="1.5"/><polyline points="30,1 36,4 30,7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+                  </span>
+                  <span class="cap-to">10,000+ KLD</span>
+                </div>
+                <div class="cap-td cap-bar-cell">
+                  <div class="cap-track">
+                    <div class="cap-fill" style="--w:85%;--fc:#f59e0b"></div>
+                  </div>
+                  <span class="cap-label">10 MLD cap.</span>
+                </div>
+              </div>
+
+            </div><!-- /.cap-table -->
+
+            <p class="cap-note">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              Custom capacities beyond listed ranges are available.
+              <button class="cap-cta contact-trigger" type="button">Contact us for bespoke requirements &rarr;</button>
+            </p>
+          </div><!-- /.cap-section -->
+
         </div>
       </section>
 
@@ -843,24 +968,32 @@
 
     <!-- FOOTER -->
     <footer class="footer-section" id="contact">
+      <div class="footer-accent-bar"></div>
       <div class="footer-top">
         <div class="container footer-grid">
+
+          <!-- Brand -->
           <div class="fc-brand">
             <div class="footer-logo">
               <img src="logo/mainlogo.png" alt="WaterTech Engineering Logo" class="brand-logo" />
             </div>
-            <p>
-              Premium industrial water treatment design, construction, and
-              managed services. 25+ years serving enterprise clients
-              worldwide.
-            </p>
+            <p>Premium industrial water treatment design, construction, and managed services. 25+ years serving enterprise clients worldwide.</p>
+            <div class="footer-tagline">
+              <span>ISO Certified</span>
+              <span>360+ Projects</span>
+              <span>25+ Years</span>
+            </div>
             <div class="footer-social">
-              <a href="https://www.linkedin.com/company/watertecenterprises/" aria-label="LinkedIn" target="_blank"
-                rel="noreferrer">in</a>
-              <a href="https://www.facebook.com/p/Watertec-Enterprises-100069765812602/" aria-label="Facebook"
-                target="_blank" rel="noreferrer">fb</a>
+              <a href="https://www.linkedin.com/company/watertecenterprises/" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="https://www.facebook.com/p/Watertec-Enterprises-100069765812602/" aria-label="Facebook" target="_blank" rel="noreferrer">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              </a>
             </div>
           </div>
+
+          <!-- Quick Links -->
           <div class="fc-links">
             <h4>Quick Links</h4>
             <a href="/about">About Us</a>
@@ -869,32 +1002,73 @@
             <a href="/projects">Projects</a>
             <a href="/contact">Contact</a>
           </div>
-          <div class="fc-links">
-            <h4>Contact</h4>
-            <a href="mailto:info@watertecenterprises.in">info@watertecenterprises.in</a>
-            <a href="tel:+919871151318">+91-9871151318</a>
-            <a href="#">J-157, Sector 5, Dr. Ambedkar Nagar, Opp. Community Center, Dakshinpuri, New Delhi, India, Pin: 110062</a>
+
+          <!-- Contact -->
+          <div class="fc-links fc-contact">
+            <h4>Contact Us</h4>
+            <a href="mailto:info@watertecenterprises.in" class="fc-contact-item">
+              <span class="fci-icon">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+              </span>
+              info@watertecenterprises.in
+            </a>
+            <a href="tel:+919871151318" class="fc-contact-item">
+              <span class="fci-icon">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.07A19.5 19.5 0 015.13 12.7a19.86 19.86 0 01-3.07-8.63A2 2 0 014.09 2h3a2 2 0 012 1.72c.12 1.05.38 2.08.78 3.05a2 2 0 01-.45 2.11L9.91 9.91a16 16 0 006 6l1.03-1.03a2 2 0 012.11-.45c.97.4 2 .66 3.05.78A2 2 0 0122 16.92z"/></svg>
+              </span>
+              +91-9871151318
+            </a>
+            <a href="#" class="fc-contact-item fc-address">
+              <span class="fci-icon">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              J-157, Sector 5, Dakshinpuri, New Delhi – 110062
+            </a>
           </div>
+
+          <!-- Business Hours -->
           <div class="fc-hours">
             <h4>Business Hours</h4>
-            <p>Monday – Friday : 9:00 AM – 7:00 PM</p>
-            <p>Saturday – 9:00 AM – 12:00 PM</p>
-            <p>Sunday – Closed</p>
+            <div class="fh-row">
+              <span class="fh-day">Mon – Fri</span>
+              <span class="fh-time">9:00 AM – 7:00 PM</span>
+            </div>
+            <div class="fh-row">
+              <span class="fh-day">Saturday</span>
+              <span class="fh-time">9:00 AM – 12:00 PM</span>
+            </div>
+            <div class="fh-row">
+              <span class="fh-day">Sunday</span>
+              <span class="fh-time fh-closed">Closed</span>
+            </div>
+            <div class="fh-status">
+              <span class="fh-dot"></span> Currently open for inquiries
+            </div>
           </div>
+
+          <!-- Quick Inquiry Form -->
           <div class="fc-form">
             <h4>Quick Inquiry</h4>
             <form id="footerForm" class="footer-form">
-              <input type="text" name="name" placeholder="Your name" required />
-              <input type="email" name="email" placeholder="Email address" required />
-              <textarea name="message" placeholder="Project details" rows="3"></textarea>
-              <button type="submit" class="ff-btn">Send Inquiry</button>
+              <input type="text" name="name" placeholder="Your name *" required />
+              <div class="ff-phone-wrap">
+                <span class="ff-phone-prefix" aria-hidden="true">+91</span>
+                <input type="tel" name="phone" placeholder="Phone number *" required maxlength="10" pattern="[0-9]{10}" inputmode="numeric" />
+              </div>
+              <input type="email" name="email" placeholder="Email address *" required />
+              <textarea name="message" placeholder="Project details *" rows="3" required></textarea>
+              <button type="submit" class="ff-btn">
+                Send Inquiry
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
             </form>
           </div>
+
         </div>
       </div>
       <div class="footer-bottom">
         <div class="container fb-inner">
-          <p>&copy; 2026 WaterTech Engineering. All rights reserved.</p>
+          <p>&copy; 2026 Watertec Enterprises Pvt. Ltd. All rights reserved.</p>
           <div class="footer-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms</a>
@@ -939,19 +1113,20 @@
       <form class="contact-form" id="contactForm">
         <div class="cf-group">
           <input type="text" id="cf-name" name="name" placeholder=" " required autocomplete="name" />
-          <label for="cf-name">Full Name</label>
+          <label for="cf-name">Full Name <span class="req-star" aria-hidden="true">*</span></label>
+        </div>
+        <div class="cf-group phone-group">
+          <input type="tel" id="cf-phone" name="phone" placeholder=" " required autocomplete="tel" maxlength="10" pattern="[0-9]{10}" inputmode="numeric" />
+          <label for="cf-phone">Mobile Number <span class="req-star" aria-hidden="true">*</span></label>
+          <span class="phone-cc" aria-hidden="true">+91</span>
         </div>
         <div class="cf-group">
-          <input type="tel" id="cf-phone" name="phone" placeholder=" " required autocomplete="tel" />
-          <label for="cf-phone">Mobile Number</label>
+          <input type="email" id="cf-email" name="email" placeholder=" " required autocomplete="email" />
+          <label for="cf-email">Email Address <span class="req-star" aria-hidden="true">*</span></label>
         </div>
         <div class="cf-group">
-          <input type="email" id="cf-email" name="email" placeholder=" " autocomplete="email" />
-          <label for="cf-email">Email Address</label>
-        </div>
-        <div class="cf-group">
-          <textarea id="cf-msg" name="message" placeholder=" " rows="4"></textarea>
-          <label for="cf-msg">Project Details</label>
+          <textarea id="cf-msg" name="message" placeholder=" " rows="4" required></textarea>
+          <label for="cf-msg">Project Details <span class="req-star" aria-hidden="true">*</span></label>
         </div>
         <button type="submit" class="btn-primary cf-submit">
           <span>Send Request</span>

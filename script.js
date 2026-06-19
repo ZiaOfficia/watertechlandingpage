@@ -14,9 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
     else if (formType === "Contact Form") source = "contact";
     else if (formType === "Footer Form") source = "footer";
 
+    const rawPhone = (formData.get('phone') || '').replace(/\D/g, '').slice(0, 10);
     const payload = {
       name: formData.get('name') || '',
-      phone: formData.get('phone') || '',
+      phone: rawPhone ? '+91' + rawPhone : '',
       email: formData.get('email') || '',
       message: formData.get('message') || '',
       source: source
@@ -39,6 +40,20 @@ document.addEventListener('DOMContentLoaded', function () {
   if (window.AOS) {
     AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 100 });
   }
+
+  /* ── PHONE INPUT — digits only, max 10 ── */
+  document.querySelectorAll('input[type="tel"]').forEach(function (input) {
+    input.addEventListener('input', function () {
+      var digits = this.value.replace(/\D/g, '').slice(0, 10);
+      if (this.value !== digits) this.value = digits;
+    });
+    input.addEventListener('keydown', function (e) {
+      var allowed = ['Backspace','Delete','Tab','ArrowLeft','ArrowRight','Home','End'];
+      if (allowed.indexOf(e.key) === -1 && !/^\d$/.test(e.key) && !e.ctrlKey && !e.metaKey) {
+        e.preventDefault();
+      }
+    });
+  });
 
   /* ── NAVBAR SCROLL ────────────────────── */
   const navbar = document.getElementById('navbar');
