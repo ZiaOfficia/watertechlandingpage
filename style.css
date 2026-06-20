@@ -1700,12 +1700,14 @@ ul { list-style: none; }
      ════════════════════════════════════════ */
   .cap-row > .cap-td:first-child {
     padding: 18px 20px 16px;
+    background: var(--blue-700); /* safe fallback so white text is always visible */
   }
-  /* Per-plant gradient banner */
-  .cap-row:nth-child(1) > .cap-td:first-child { background: linear-gradient(135deg,#1a4a8a 0%,#2d78d6 100%); }
-  .cap-row:nth-child(2) > .cap-td:first-child { background: linear-gradient(135deg,#007a9a 0%,#00b4d8 100%); }
-  .cap-row:nth-child(3) > .cap-td:first-child { background: linear-gradient(135deg,#059669 0%,#10b981 100%); }
-  .cap-row:nth-child(4) > .cap-td:first-child { background: linear-gradient(135deg,#b45309 0%,#f59e0b 100%); }
+  /* Per-plant gradient banner
+     cap-thead is child 1 of cap-table → cap-rows are children 2–5 */
+  .cap-row:nth-child(2) > .cap-td:first-child { background: linear-gradient(135deg,#1a4a8a 0%,#2d78d6 100%); }
+  .cap-row:nth-child(3) > .cap-td:first-child { background: linear-gradient(135deg,#007a9a 0%,#00b4d8 100%); }
+  .cap-row:nth-child(4) > .cap-td:first-child { background: linear-gradient(135deg,#059669 0%,#10b981 100%); }
+  .cap-row:nth-child(5) > .cap-td:first-child { background: linear-gradient(135deg,#b45309 0%,#f59e0b 100%); }
 
   /* "PLANT TYPE" eyebrow in banner */
   .cap-row > .cap-td:first-child::before {
